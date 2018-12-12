@@ -10,7 +10,10 @@
 
 <body>
 <div id="overLay" class="overlay"></div>
-<input type="button" onclick="displayForm()" value="Add Book">
+<div class="navbar">
+    <input class="addBook" type="button" onclick="displayForm()" value="Add Book + ">
+    <div class="navTitle">the Library</div>
+</div>
 <div class="dFlex">
     <form id="bookForm" class="bookForm" autocomplete="off" action="#" onsubmit="addBook(); return false">
         <br>
@@ -33,9 +36,15 @@
         <input class="inputBox" type="submit" value="Submit">
     </form>            
 </div>
-
+<br>
 <div id="inputCont">
 </div>
-
+<footer>
+    <div class="Footer">
+        <div class="footCont">
+            <a class="textDec" href="https://github.com/taylorjohannsen"><div class="myName">Made by Taylor Johannsen</div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

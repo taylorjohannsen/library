@@ -35,20 +35,20 @@ function addBook() {
 
 function render(bookInfo) {
     let bookAuthor = document.createElement('div');
-    bookAuthor.textContent = bookInfo.author;
+    bookAuthor.textContent = 'Author - ' + bookInfo.author;
 
     let bookTitle = document.createElement('div');
-    bookTitle.textContent = bookInfo.title;
+    bookTitle.textContent = 'Title - ' + bookInfo.title;
 
     let bookPages = document.createElement('div');
-    bookPages.textContent = bookInfo.pages;
+    bookPages.textContent = 'Number of Pages - ' + bookInfo.pages;
 
     let bookRead = document.createElement('div');
-    bookRead.textContent = bookInfo.read;
+    bookRead.textContent = 'Finished reading? - ' + bookInfo.read;
     
     let bookDelete = document.createElement('button');
     bookDelete.innerHTML = 'Delete Book';
-    bookDelete.classList = 'Test';
+    bookDelete.classList = 'delBttn';
     bookDelete.addEventListener ("click", function() {
         inputCont.removeChild(document.getElementById(authorDiv.id));
     })
