@@ -1,0 +1,53 @@
+.Test {
+    color: black;
+    font-size: 20px;
+}
+.bookForm {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    margin-top: 5%;
+    width: 400px;
+    height: 600px;
+    padding-top: 10px;
+    background-color: #da7b10;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 11;
+    color: white;
+    font-size: 30px;
+}
+.dFlex {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    position: relative;
+    font-family: 'Source Sans Pro';
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 10;
+}
+.inputBox {
+    border: 1px solid black;
+    width: 300px;
+    font-size: 20px;
+    height: 30px;
+    padding-left: 10px;
+}
+.authorDiv {
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 15%;
+}

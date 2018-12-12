@@ -4,11 +4,38 @@
 <head>
     <title>Library</title>
     <script type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 </head>
 
 <body>
+<div id="overLay" class="overlay"></div>
+<input type="button" onclick="displayForm()" value="Add Book">
+<div class="dFlex">
+    <form id="bookForm" class="bookForm" autocomplete="off" action="#" onsubmit="addBook(); return false">
+        <br>
+        Title:<br>
+        <input class="inputBox" type="text" id="titleInput" name="title" required>
+        <br>
+        <br>
+        Author:<br>
+        <input class="inputBox" type="text" id="authInput" name="author" required>
+        <br>
+        <br>
+        Number of Pages:<br>
+        <input class="inputBox" type="number" id="pagesInput" name="pages" required>
+        <br>
+        <br>
+        Read?<br>
+        <input class="inputBox" type="checkbox" id="readInput" name="read">
+        <br>
+        <br>
+        <input class="inputBox" type="submit" value="Submit">
+    </form>            
+</div>
 
+<div id="inputCont">
+</div>
 
 </body>
-
 </html>
