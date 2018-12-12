@@ -73,3 +73,16 @@ function displayForm() {
     let overLay = document.getElementById('overLay');
     overLay.style.display = 'block';
 }
+
+  // Set the configuration for your app
+  // TODO: Replace with your project's config object
+  var config = {
+    apiKey: "AIzaSyB68qz3p0-TdgLOEsMy22Xby17NE4-3bIE",
+    authDomain: "library-app-85d72.firebaseapp.com",
+    databaseURL: "https://library-app-85d72.firebaseio.com",
+    storageBucket: "bucket.appspot.com"
+  };
+  firebase.initializeApp(config);
+
+  // Get a reference to the database service
+  var database = firebase.database();
