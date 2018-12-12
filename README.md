@@ -1,2 +1,2 @@
-# todolist
-basic to-do list using vanilla JS
+# library
+basic library keeping list using vanilla JS
